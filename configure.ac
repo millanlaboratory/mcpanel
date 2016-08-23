@@ -19,10 +19,9 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_LIBOBJ_DIR([lib])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS([config/config.h])
-AM_INIT_AUTOMAKE([-Wall])
 
 # Initialize Automake
-AM_INIT_AUTOMAKE([subdir-objects no-dist-gzip dist-bzip2 color-tests])
+AM_INIT_AUTOMAKE([-Wall subdir-objects no-dist-gzip dist-bzip2 color-tests])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_CANONICAL_HOST
